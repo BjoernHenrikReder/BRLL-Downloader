@@ -14,7 +14,6 @@ class RSSFeed:
   
 	def searchTag(self, seriesName, tag):
 		self.tag = tag
-  
 		for node in self.xmlFile.getElementsByTagName(self.tag):
  			description = node.getElementsByTagName('title')
  			if seriesName.lower() in description[0].toxml().lower():
