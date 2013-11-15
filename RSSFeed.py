@@ -16,10 +16,10 @@
  		self.tag = tag
   
 		for node in self.xmlFile.getElementsByTagName(self.tag):
- 		description = node.getElementsByTagName('title')
- 		if seriesName.lower() in description[0].toxml().lower():
- 			print(seriesName)
- 			print(self.getEpisode(description[0].toxml()))
+ 			description = node.getElementsByTagName('title')
+ 			if seriesName.lower() in description[0].toxml().lower():
+ 				print(seriesName)
+ 				print(self.getEpisode(description[0].toxml()))
                            
 	def getEpisode(self, title):
 		self.title = title
